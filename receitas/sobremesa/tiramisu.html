@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bom Gosto - Tiramisu Clássico</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="shortcut icon" href="/icons/favicon2.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/receitas.css" />
+    <link rel="stylesheet" href="/styles/media.css" />
+  </head>
+
+  <body>
+    <div id="top">
+      <!-- caixa de pesquisa -->
+      <div class="search-container">
+        <form action="" class="search" id="search-bar">
+          <input
+            type="search"
+            placeholder="Pesquisa..."
+            class="search__input"
+          />
+
+          <div class="search__button" id="search-button">
+            <i class="ri-search-line search__icon"></i>
+            <i class="ri-close-line search__close"></i>
+          </div>
+        </form>
+      </div>
+      <script src="/js/main.js"></script>
+      <!--Logo bom gosto-->
+      <h1 class="header-h1"><a href="/index.html">Bom Gosto</a></h1>
+      <!--Icon de logo-->
+      <div id="logar">
+        <a href="/receitas/login.html">
+          <span class="material-symbols-outlined"> person </span>
+          <p style="display: inline-block">Entrar</p>
+        </a>
+      </div>
+    </div>
+
+    <header id="header">
+      <nav id="menu">
+        <div>
+          <a href="/index.html">
+            <span class="material-symbols-outlined"> restaurant_menu </span>
+          </a>
+        </div>
+        <a href="/receitas/principais/principais.html">Pratos Principais</a>
+        <a href="/receitas/sobremesa/sobremesa.html">Sobremesas</a>
+        <a href="/receitas/bebidas/bebidas.html">Bebidas</a>
+        <a href="/receitas/saudavel/saudavel.html">Saudável</a>
+        <a href="/receitas/lanches/lanches.html">Lanches e Aperitivos</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="highlight-h1">Tiramisu Clássico</h1>
+
+      <section id="receita">
+        <div id="image">
+          <div class="receitas-cat">
+            <p>sobremesas</p>
+          </div>
+
+          <abbr title="Tiramisu Clássico"
+            ><img src="/images/sobremesas/tiramisu.jpg" alt="Tiramisu Clássico"
+          /></abbr>
+
+          <div class="image-desc">
+            <div class="image-span">
+              <span class="material-symbols-outlined"> schedule </span>
+              <p style="display: inline">30min</p>
+            </div>
+
+            <div class="image-span">
+              <span class="material-symbols-outlined"> stockpot </span>
+              <p style="display: inline">6-8 porções</p>
+            </div>
+
+            <p>
+              Camadas de biscoitos de ladyfinger embebidos em café e creme de
+              mascarpone, polvilhadas com cacau em pó, uma sobremesa italiana
+              que é um verdadeiro deleite.
+            </p>
+          </div>
+        </div>
+
+        <nav>
+          <h2>Confira também:</h2>
+          <ul>
+            <a href="/receitas/sobremesa/brownie-saudavel.html">
+              <li><p>Brownie de Chocolate Saudável</p></li>
+            </a>
+            <a href="/receitas/sobremesa/cheesecake.html">
+              <li><p>Cheesecake de Framboesa</p></li>
+            </a>
+            <a href="/receitas/sobremesa/cookies-de-aveia.html">
+              <li><p>Cookies de Aveia e Passas</p></li>
+            </a>
+            <a href="/receitas/sobremesa/creme-brulee.html">
+              <li><p>Creme Brûlée</p></li>
+            </a>
+            <a href="/receitas/sobremesa/cupcake.html">
+              <li><p>Cupcake</p></li>
+            </a>
+            <a href="/receitas/sobremesa/mousse-de-chocolate.html">
+              <li><p>Mousse de Chocolate</p></li>
+            </a>
+            <a href="/receitas/sobremesa/pudim-caramelo.html">
+              <li><p>Pudim de Caramelo</p></li>
+            </a>
+            <a href="/receitas/sobremesa/sorvete-caseiro.html">
+              <li><p>Sorvete Caseiro</p></li>
+            </a>
+            <a href="/receitas/sobremesa/sorvete-de-baunilha.html">
+              <li><p>Sorvete de Baunilha com Calda de Frutas Vermelhas</p></li>
+            </a>
+            <a href="/receitas/sobremesa/bolo-chocolate-ganache.html">
+              <li><p>Bolo de Chocolate com Cobertura de Ganache</p></li>
+            </a>
+            <a href="/receitas/sobremesa/torta-de-maca.html">
+              <li><p>Torta de Maçã Caseira</p></li>
+            </a>
+          </ul>
+        </nav>
+
+        <article class="ingredientes">
+          <h2>Ingredientes</h2>
+          <!--    <div class="check">
+                </div> -->
+          <div>
+            <input type="checkbox" name="ing-1" id="ing-1" />
+            <label for="ing-1">4 gemas de ovos</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="ing-2" id="ing-2" />
+            <label for="ing-2">3/4 de xícara de açúcar</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="ing-3" id="ing-3" />
+            <label for="ing-3"
+              >1 xícara de queijo mascarpone (aproximadamente 250g)</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="ing-4" id="ing-4" />
+            <label for="ing-4">1/2 xícaras de creme de leite fresco</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-5" id="ing-5" />
+            <label for="ing-5"
+              >1 xícara de café forte, preparado e resfriado</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="ing-6" id="ing-6" />
+            <label for="ing-6">1/4 de xícara de licor de café (opcional)</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="ing-7" id="ing-7" />
+            <label for="ing-7"
+              >1 pacote de biscoitos tipo "ladyfingers" (cerca de 24
+              unidades)</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="ing-8" id="ing-8" />
+            <label for="ing-8">Cacau em pó, para polvilhar</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="ing-9" id="ing-9" />
+            <label for="ing-9"
+              >Chocolate amargo ralado (opcional, para decorar)</label
+            >
+          </div>
+        </article>
+
+        <article class="preparo">
+          <h2>Modo de Preparo</h2>
+          <div>
+            <input type="checkbox" name="passo-1" id="passo-1" />
+            <label for="passo-1"
+              ><strong class="bold">1. Preparar o Café:</strong></label
+            >
+            <p>
+              Prepare uma xícara de café forte e deixe esfriar completamente.
+              Você pode adicionar o licor de café ao café, se desejar, para um
+              sabor extra.
+            </p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="passo-2" id="passo-2" />
+            <label for="passo-2"
+              ><strong class="bold"
+                >2. Preparar o Creme de Mascarpone:</strong
+              ></label
+            >
+            <p>
+              Em uma tigela resistente ao calor, misture as gemas de ovos e o
+              açúcar. Coloque a tigela sobre uma panela com água fervente em
+              fogo baixo (banho-maria). Bata a mistura continuamente com um
+              batedor de mão até que ela fique espessa e clara. Isso deve levar
+              cerca de 5-7 minutos. Retire a tigela do banho-maria e continue a
+              bater até que ela esfrie completamente.
+            </p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="passo-3" id="passo-3" />
+            <label for="passo-3"
+              ><strong class="bold"
+                >3. Adicionar o Queijo Mascarpone:</strong
+              ></label
+            >
+            <p>
+              Adicione o queijo mascarpone à mistura de gemas e açúcar. Misture
+              até que fique bem incorporado e suave.
+            </p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="passo-4" id="passo-4" />
+            <label for="passo-4"
+              ><strong class="bold"
+                >4. Preparar o Creme de Leite:</strong
+              ></label
+            >
+            <p>
+              Em outra tigela, bata o creme de leite fresco até que ele atinja o
+              ponto de chantilly, ou seja, fique espesso e com picos firmes.
+            </p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="passo-5" id="passo-5" />
+            <label for="passo-5"
+              ><strong class="bold"
+                >5. Incorporar o Creme de Leite ao Mascarpone:</strong
+              ></label
+            >
+            <p>
+              Delicadamente, dobre o creme de leite batido na mistura de
+              mascarpone até que fique homogêneo. Tome cuidado para não perder o
+              volume do creme de leite.
+            </p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="passo-6" id="passo-6" />
+            <label for="passo-6"
+              ><strong class="bold">6. Montar o Tiramisu:</strong></label
+            >
+            <p>
+              Mergulhe rapidamente cada biscoito ladyfinger no café preparado e
+              disponha-os em uma camada em um prato ou travessa de servir.
+            </p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="passo-7" id="passo-7" />
+            <label for="passo-7"
+              ><strong class="bold">7. Adicionar o Creme:</strong></label
+            >
+            <p>
+              Espalhe metade do creme de mascarpone sobre a camada de biscoitos.
+            </p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="passo-8" id="passo-8" />
+            <label for="passo-8"
+              ><strong class="bold">8. Repetir as Camadas:</strong></label
+            >
+            <p>
+              Coloque outra camada de biscoitos ladyfingers embebidos no café
+              sobre o creme de mascarpone. Espalhe o restante do creme de
+              mascarpone por cima.
+            </p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="passo-9" id="passo-9" />
+            <label for="passo-9"
+              ><strong class="bold">9. Refrigerar:</strong></label
+            >
+            <p>
+              Cubra o prato com filme plástico e leve à geladeira por pelo menos
+              4 horas ou durante a noite para que os sabores se misturem e a
+              sobremesa fique firme.
+            </p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="passo-10" id="passo-10" />
+            <label for="passo-10"
+              ><strong class="bold">10. Finalizar e Servir:</strong></label
+            >
+            <p>
+              Antes de servir, polvilhe generosamente cacau em pó sobre o
+              tiramisu. Você também pode decorar com chocolate amargo ralado, se
+              desejar.
+            </p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="passo-11" id="passo-11" />
+            <label for="passo-11"
+              ><strong class="bold">11. Aproveitar:</strong></label
+            >
+            <p>Sirva o tiramisu clássico bem gelado em porções individuais.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h1>Bom Gosto <span> &reg; </span></h1>
+      <p><strong>Contato: bomgosto@gmail.com</strong></p>
+    </footer>
+    <div class="footer-end">
+      <p>&copy; 2023 Bom Gosto - todos os direitos reservados</p>
+      <p>
+        Site criado por Igor Henrique, Ryan de Almeida e Marcio Costa Santos
+      </p>
+    </div>
+  </body>
+</html>

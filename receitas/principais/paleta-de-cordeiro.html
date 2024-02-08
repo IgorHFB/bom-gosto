@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bom Gosto - Paleta de Cordeiro Assada</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="shortcut icon" href="/icons/favicon2.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/receitas.css" />
+    <link rel="stylesheet" href="/styles/media.css" />
+  </head>
+
+  <body>
+    <div id="top">
+      <!-- caixa de pesquisa -->
+      <div class="search-container">
+        <form action="" class="search" id="search-bar">
+          <input type="search" placeholder="Buscar..." class="search__input" />
+
+          <div class="search__button" id="search-button">
+            <i class="ri-search-line search__icon"></i>
+            <i class="ri-close-line search__close"></i>
+          </div>
+        </form>
+      </div>
+      <script src="/js/main.js"></script>
+      <!--Logo bom gosto-->
+      <h1 class="header-h1"><a href="/index.html">Bom Gosto</a></h1>
+
+      <div id="logar">
+        <a href="/receitas/login.html">
+          <span class="material-symbols-outlined"> person </span>
+          <p style="display: inline-block">Entrar</p>
+        </a>
+      </div>
+    </div>
+
+    <header id="header">
+      <nav id="menu">
+        <div>
+          <a href="/index.html">
+            <span class="material-symbols-outlined"> restaurant_menu </span>
+          </a>
+        </div>
+        <a href="/receitas/principais/principais.html">Pratos Principais</a>
+        <a href="/receitas/sobremesa/sobremesa.html">Sobremesas</a>
+        <a href="/receitas/bebidas/bebidas.html">Bebidas</a>
+        <a href="/receitas/saudavel/saudavel.html">Saudável</a>
+        <a href="/receitas/lanches/lanches.html">Lanches e Aperitivos</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="highlight-h1">Paleta de Cordeiro Assada</h1>
+
+      <section id="receita">
+        <div id="image">
+          <div class="receitas-cat">
+            <p>pratos principais</p>
+          </div>
+
+          <abbr title="Paleta de Cordeiro Assada"
+            ><img
+              src="/images/pratos-principais/paletacordeiro.jpg"
+              alt="Paleta de Cordeiro Assada"
+          /></abbr>
+
+          <div class="image-desc">
+            <div class="image-span">
+              <span class="material-symbols-outlined"> schedule </span>
+              <p style="display: inline">3h30min</p>
+            </div>
+
+            <div class="image-span">
+              <span class="material-symbols-outlined"> stockpot </span>
+              <p style="display: inline">4-6 porções</p>
+            </div>
+
+            <p>
+              Um corte de cordeiro macio e suculento, cozido lentamente até que
+              a carne se desfaça em um molho rico e saboroso, resultando em uma
+              explosão de sabor.
+            </p>
+          </div>
+        </div>
+
+        <nav>
+          <h2>Confira também:</h2>
+          <ul>
+            <a href="/receitas/principais/salmao-grelhado.html">
+              <li><p>Salmão Grelhado com Molho de Limão</p></li>
+            </a>
+            <a href="/receitas/principais/risoto-cogumelo.html">
+              <li><p>Risoto de Cogumelos</p></li>
+            </a>
+            <a href="/receitas/principais/lasanha.html">
+              <li><p>Lasanha à Bolonhesa</p></li>
+            </a>
+            <a href="/receitas/principais/frango-assado-batatas.html">
+              <li><p>Frango Assado com Batatas</p></li>
+            </a>
+            <a href="/receitas/principais/frango-curry.html">
+              <li><p>Frango ao Curry</p></li>
+            </a>
+            <a href="/receitas/principais/espaguete.html">
+              <li><p>Espaguete ao Pesto com Tomate Seco</p></li>
+            </a>
+            <a href="/receitas/principais/bife-grelhado-molho.html">
+              <li><p>Bife Grelhado com Molho de Vinho Tinto</p></li>
+            </a>
+            <a href="/receitas/principais/frango-parmegiana.html">
+              <li><p>Frango à Parmegiana</p></li>
+            </a>
+            <a href="/receitas/principais/picanha-grelhada.html">
+              <li><p>Picanha Grelhada com Batata Recheada</p></li>
+            </a>
+            <a href="/receitas/principais/tacos.html">
+              <li><p>Tacos de Carne Moída</p></li>
+            </a>
+            <a href="/receitas/principais/file-de-peixe.html">
+              <li><p>Filé de Peixe Fresco</p></li>
+            </a>
+          </ul>
+        </nav>
+
+        <article class="ingredientes">
+          <h2>Ingredientes</h2>
+          <!--    <div class="check">
+                </div> -->
+          <div>
+            <input type="checkbox" name="ing-1" id="ing-1" />
+            <label for="ing-1"
+              >1 paleta de cordeiro (aproximadamente 2 kg)</label
+            >
+          </div>
+          <div>
+            <input type="checkbox" name="ing-2" id="ing-2" />
+            <label for="ing-2">6 dentes de alho, picados</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-3" id="ing-3" />
+            <label for="ing-3">2 ramos de alecrim fresco</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-4" id="ing-4" />
+            <label for="ing-4">2 ramos de tomilho fresco</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-5" id="ing-5" />
+            <label for="ing-5">2 folhas de louro</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-6" id="ing-6" />
+            <label for="ing-6">Sal e pimenta-do-reino a gosto</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-7" id="ing-7" />
+            <label for="ing-7">2 colheres de sopa de azeite de oliva</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-8" id="ing-8" />
+            <label for="ing-8">1 xícara de vinho branco seco</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-9" id="ing-9" />
+            <label for="ing-9">1 xícara de caldo de carne (ou água)</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-10" id="ing-10" />
+            <label for="ing-10"
+              >4 batatas grandes, cortadas em rodelas grossas</label
+            >
+          </div>
+          <div>
+            <input type="checkbox" name="ing-11" id="ing-11" />
+            <label for="ing-11">4 cenouras grandes, cortadas em pedaços</label>
+          </div>
+        </article>
+
+        <article class="preparo">
+          <h2>Modo de Preparo</h2>
+          <div>
+            <input type="checkbox" name="modo-1" id="modo-1" />
+            <label for="modo-1"
+              ><strong class="bold">1. Preparar a Paleta de Cordeiro:</strong
+              ><br />Pré-aqueça o forno a 160°C. Tempere a paleta de cordeiro
+              com sal, pimenta-do-reino, alho picado e as folhas de louro. Em
+              uma frigideira grande, aqueça o azeite de oliva em fogo alto. Sele
+              a paleta de cordeiro em todos os lados até que fique
+              dourada.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-2" id="modo-2" />
+            <label for="modo-2"
+              ><strong class="bold">2. Montar a Assadeira:</strong
+              ><br />Transfira a paleta selada para uma assadeira grande e
+              funda. Adicione as ervas frescas (alecrim e tomilho) por cima da
+              paleta.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-3" id="modo-3" />
+            <label for="modo-3"
+              ><strong class="bold">3. Deglacear a Frigideira:</strong><br />Na
+              mesma frigideira em que você selou a paleta, despeje o vinho
+              branco e raspe o fundo para soltar os sabores. Deixe o vinho
+              reduzir um pouco.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-4" id="modo-4" />
+            <label for="modo-4"
+              ><strong class="bold">4. Assar a Paleta de Cordeiro:</strong
+              ><br />Despeje o caldo de carne (ou água) sobre a paleta de
+              cordeiro. Cubra a assadeira com papel alumínio ou uma tampa e leve
+              ao forno pré-aquecido. Asse a paleta de cordeiro por cerca de 3 a
+              3,5 horas, regando com os sucos da assadeira a cada 30 minutos.
+              Adicione as batatas e as cenouras à assadeira após cerca de 2
+              horas de cozimento.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-5" id="modo-5" />
+            <label for="modo-5"
+              ><strong class="bold">5. Verificar o Cozimento:</strong
+              ><br />Verifique a paleta de cordeiro para garantir que esteja
+              macia e se desfazendo. Ela deve estar bem cozida após o tempo
+              total de cozimento.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-6" id="modo-6" />
+            <label for="modo-6"
+              ><strong class="bold">6. Servir:</strong><br />Retire a paleta de
+              cordeiro do forno e deixe descansar por alguns minutos antes de
+              fatiar. Sirva a paleta de cordeiro fatiada, acompanhada das
+              batatas, cenouras e molho da assadeira.</label
+            >
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h1>Bom Gosto <span> &reg; </span></h1>
+      <p><strong>Contato: bomgosto@gmail.com</strong></p>
+    </footer>
+    <div class="footer-end">
+      <p>&copy; 2023 Bom Gosto - todos os direitos reservados</p>
+      <p>
+        Site criado por Igor Henrique, Ryan de Almeida e Marcio Costa Santos
+      </p>
+    </div>
+  </body>
+</html>

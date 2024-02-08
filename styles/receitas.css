@@ -1,0 +1,141 @@
+main h1 {
+    margin: 50px 0 10px 0;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+section#receita {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "image image nav"
+        "ingredientes preparo preparo";
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 80%;
+}
+
+div#image {
+    grid-area: image;
+    text-align: center;
+}
+
+div#image img {
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 5px 5px 12px 2px rgba(0, 0, 0, 0.314);
+}
+
+div#image .image-desc {
+    text-align: left;
+}
+
+div#image .image-desc > p {
+    font-size: 1.3em;
+    margin: 20px 10px;
+    line-height: 1.8em;
+}
+
+div#image .receitas-cat {
+    transform: translateY(15px);
+    padding: 3px 15px;
+}
+
+section#receita ul {
+    display: inline-block;
+    list-style-image: url(/icons/right-arrow.svg);
+}
+
+section#receita li {
+    color: #222;
+    margin: 20px 0 20px 20px;
+    text-align: left;
+    transition: 0.3s color;
+}
+
+section#receita li:hover{
+    color: #d71506;
+}
+
+section#receita a {
+    text-decoration: none;
+    color: black;
+}
+
+section#receita a:hover {
+    color: #d71506;
+}
+
+div#image .image-span {
+    display: inline-block;
+    margin: 5px 10px 0 1px;
+}
+
+div#image .material-symbols-outlined {
+    color: #444;
+    font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+    transform: translateY(5.5px);
+}
+
+section#receita nav {
+    grid-area: nav;
+    text-align: center;
+}
+
+nav p {
+    display: inline-block;
+    transform: translateY(-3.7px);
+}
+
+section#receita h2 {
+    color: var(--color-5);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section#receita .ingredientes {
+    grid-area: ingredientes;
+}
+
+section#receita .preparo {
+    grid-area: preparo;
+    max-width: 500px;
+}
+
+.preparo div {
+    margin: 30px 0;
+}
+
+.preparo h3 {
+    color: var(--color-5);
+    font-size: 1.4em;
+}
+
+article input[type="checkbox"] {
+    cursor: pointer;
+    transform: translateY(1px);
+}
+
+article input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 1px blue;
+}
+
+article label {
+    cursor: pointer;
+    margin: 0 5px;
+    line-height: 1.9em;
+}
+
+.ingredientes div {
+    margin: 15px 10px;
+}
+
+div#image, section#receita nav, section#receita article {
+    padding: 10px;
+    margin: 10px;
+}
+
+.bold {
+    font-weight: 700;
+}

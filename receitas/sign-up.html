@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/sign-up.css" />
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/icons/favicon2.ico" type="image/x-icon">
+    <title>Bom Gosto - Cadastro</title>
+  </head>
+
+  <body>
+    <div>
+      <h1 class="pag-log-h1"><a href="/index.html">Bom Gosto</a></h1>
+    </div>
+
+    <main>
+      <div>
+        <div class="container">
+          <div class="header">
+            <h2>Crie sua conta</h2>
+          </div>
+          <form id="form" class="form">
+            <div class="form-control">
+              <label for="username">Nome de usuário</label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Digite seu nome de usuário..."
+              />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+              <label for="email">E-mail</label>
+              <input type="text" id="email" placeholder="Digite seu email.." />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+              <label for="password">Senha</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Digite sua senha..."
+              />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+              <label for="password-confirmation">Confirmação de senha</label>
+              <input
+                type="password"
+                id="password-confirmation"
+                placeholder="Digite sua senha novamente..."
+              />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
+            </div>
+            <button type="submit">Enviar</button>
+            <div class="form-desc">
+                <p>Já possui uma conta? <span><a href="login.html">Faça o login</a></span></p>
+            </div>
+          </form>
+        </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/js/sign-up.js"></script>
+  </body>
+</html>

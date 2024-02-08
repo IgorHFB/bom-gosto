@@ -1,0 +1,509 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+@font-face {
+  font-family: "Farming";
+  src: url(../fonts/Farming.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Please";
+  src: url(../fonts/Please\ write\ me\ a\ song.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Ice Cream";
+  src: url(../fonts/Ice\ Cream.otf) format("opentype");
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(248, 248, 248);
+}
+
+:root {
+  --color-1: #f3d12c;
+  --color-2: #f2bc17;
+  --color-3: #f11803;
+  --color-4: #d71506;
+  --color-5: #590300;
+  --small-font-size: 0.875rem;
+}
+
+div#top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+}
+
+div#top .material-symbols-outlined {
+  font-size: 2em;
+  color: var(--color-4);
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+
+div#top p {
+  color: var(--color-5);
+  transform: translateY(-8px);
+}
+
+div#top > div > a {
+  text-decoration: none;
+  color: #111;
+}
+
+div#logar {
+  margin-right: 25px;
+}
+
+/* barra de pesquisa */
+.search-container {
+  width: 26%;
+  height: 10vh;
+  margin-inline: 1.5rem;
+  /* display: grid; */
+  display: flex;
+  place-items: center;
+  margin-right: -100px;
+}
+
+.search {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0 4px 24px hsla(222, 68%, 12%, 0.1);
+  border-radius: 4rem;
+  padding: 10px;
+  overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  width: calc(100% - 44px);
+  height: 100%;
+  border-radius: 4rem;
+  padding-left: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 100;
+}
+
+.search__input:-webkit-autofill {
+  box-shadow: 0 0 0 100px var(white) inset;
+}
+
+.search__button {
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-3);
+  border-radius: 60%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 7px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.6s cubic-bezier(0.9, 0, 0.3, 0.9);
+}
+
+.search__icon,
+.search__close {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  transition: opacity 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
+}
+
+.search__close {
+  opacity: 0;
+}
+
+/* Animação da barra*/
+.show-search {
+  width: 80%;
+}
+
+.show-search .search__input {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.show-search .search__button {
+  transform: rotate(90deg);
+}
+
+.show-search .search__icon {
+  opacity: 0;
+}
+
+.show-search .search__close {
+  opacity: 1;
+}
+
+.header-h1 {
+  font-size: 2.1em;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 0 7px 0;
+  transform: translateX(-100px);
+}
+
+.header-h1 > a {
+  font-family: "Ice Cream", "display";
+  font-size: 1.5em;
+  font-weight: light;
+  text-decoration: none;
+  color: var(--color-3);
+  padding: 5px;
+}
+
+#header .material-symbols-outlined {
+  color: white;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  transform: translateY(2px);
+}
+
+nav#menu {
+  background-color: var(--color-4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px;
+}
+
+nav#menu a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 425;
+  color: rgba(255, 253, 240, 0.897);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+nav#menu a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: white;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+nav#menu a:hover {
+  color: white;
+}
+
+nav#menu a:hover:before {
+  width: 100%;
+  right: 0.2%;
+  align-items: center;
+  text-align: center;
+}
+
+section#content {
+  border-radius: 10px;
+  max-width: 90%;
+  margin: 25px auto 25px auto;
+  padding: 10px;
+}
+
+section#content h1 {
+  text-align: center;
+  margin: 20px 0 10px 0;
+  font-size: 2em;
+}
+
+section#content a {
+  text-decoration: none;
+}
+
+section#highlight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+section#highlight img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+section#highlight a:nth-child(1) {
+  grid-row: 1 / 3;
+}
+
+.highlight-h1 {
+  color: var(--color-5);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.highlight-item {
+  display: grid;
+}
+
+.highlight-item img {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.highlight-item p {
+  background-color: rgba(0, 0, 0, 0.42);
+  border-radius: 0 0 7px 7px;
+  padding: 15px;
+  color: white;
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+}
+
+.highlight-item:hover {
+  opacity: 0.88;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+.highlight-item p:hover {
+  color: var(--color-2);
+  transition: color 0.3s;
+}
+
+section.categorias {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.receitas-h1 {
+  margin-top: 85px;
+  text-transform: uppercase;
+}
+
+.receitas-h1 a {
+  color: var(--color-5);
+}
+
+.receitas-h1 a:hover {
+  color: var(--color-4);
+  transition: 0.5s ease-in-out;
+}
+
+.receitas-h1 .material-symbols-outlined {
+  margin: 10px;
+  transform: translateY(1px);
+}
+
+.box-receitas {
+  background-color: #fff;
+  width: 310px;
+  height: 390px;
+  margin: 10px;
+  border-radius: 7px;
+  box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.304);
+}
+
+.box-receitas:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.box-receitas h2 {
+  color: var(--color-4);
+  /* color: #f0b400; */
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.receitas-img img {
+  padding: 2.5px;
+  width: 310px;
+  height: 200px;
+  border-radius: 7px;
+}
+
+.receitas-img img:hover {
+  filter: brightness(85%);
+  transition: 0.5s ease-in;
+}
+
+.receitas-cat {
+  display: inline-block;
+  margin: auto;
+  background-color: var(--color-4);
+  /* background-color: #f0b400; */
+  color: #fff;
+  border-radius: 7px;
+  padding: 3px 6px;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  transform: translateY(-22px);
+}
+
+.receitas-center {
+  text-align: center;
+}
+
+.receitas-center a:hover {
+  color: black;
+}
+
+.receitas-txt {
+  text-align: center;
+}
+
+.receitas-txt div {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.receitas-txt p {
+  color: rgb(131, 131, 131);
+  font-size: 1em;
+}
+
+.receitas-txt .material-symbols-outlined {
+  color: rgb(131, 131, 131);
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+  transform: translateY(5.5px);
+}
+
+#selected {
+  background-color: #ffffff3b;
+  border-radius: 6px;
+  padding: 4px;
+  text-align: center;
+  align-items: center;
+}
+
+#selected:hover {
+  background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.075));
+  transition: width 0.3s ease;
+}
+
+/* FlexBox */
+.flex img {
+  max-width: 100%;
+  text-align: center;
+  display: block;
+  width: 380px;
+  height: 200px;
+  object-fit: cover;
+  float: inline-end;
+  text-align: center;
+  margin-top: 3px;
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1075px;
+  margin: 0 auto;
+}
+
+.flex > div {
+  flex: 1 1 230px;
+  margin: 20px;
+}
+
+#topo {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#comidas a {
+  color: #000000;
+  margin-top: 8px;
+  text-decoration: none;
+  font-size: larger;
+}
+
+#comidas a:hover {
+  color: var(--color-4);
+}
+
+#comidas p {
+  text-align: center;
+  font-size: larger;
+  transition: color 0.3s;
+}
+
+#comidas p:hover {
+  color: var(--color-4);
+}
+
+#comidas img {
+  margin-bottom: 5px;
+  transition: transform 0.3s;
+}
+#comidas img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #d71406d3;
+  color: #fff;
+  padding: 10px;
+  margin-top: 150px;
+}
+
+footer h1 {
+  font-family: 'Ice Cream', 'display';
+  font-size: 2.5em;
+  margin: 10px;
+  transform: translateY(-3px);
+}
+
+footer p {
+  margin: 10px;
+  padding: 5px;
+}
+
+footer span {
+  font-size: 16px;
+  margin-left: -5px;
+}
+
+.footer-end {
+  margin: 10px 0;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.footer-end p {
+  font-size: 13px;
+  margin: 2px 25px 0 25px;
+}

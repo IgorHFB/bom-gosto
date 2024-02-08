@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom Gosto - Café Gelado com Leite de Amêndoas</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="/icons/favicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/receitas.css">
+    <link rel="stylesheet" href="/styles/media.css">
+</head>
+
+<body>
+    <div id="top">
+        <!-- caixa de pesquisa -->
+        <div class="search-container">
+            <form action="" class="search" id="search-bar">
+                <input type="search" placeholder="Pesquisa..." class="search__input">
+
+                <div class="search__button" id="search-button">
+                    <i class="ri-search-line search__icon"></i>
+                    <i class="ri-close-line search__close"></i>
+                </div>
+            </form>
+        </div>
+        <script src="/js/main.js"></script>
+        <!--Logo bom gosto-->
+        <h1 class="header-h1"><a href="/index.html">Bom Gosto</a></h1>
+        <!--Icon de logo-->
+        <div id="logar">
+            <a href="/receitas/login.html">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+                <p style="display: inline-block">Entrar</p>
+            </a>
+        </div>
+    </div>
+
+    <header id="header">
+        <nav id="menu">
+            <div>
+                <a href="/index.html">
+                    <span class="material-symbols-outlined">
+                        restaurant_menu
+                    </span>
+                </a>
+            </div>
+            <a href="/receitas/principais/principais.html">Pratos Principais</a>
+            <a href="/receitas/sobremesa/sobremesa.html">Sobremesas</a>
+            <a href="/receitas/bebidas/bebidas.html">Bebidas</a>
+            <a href="/receitas/saudavel/saudavel.html">Saudável</a>
+            <a href="/receitas/lanches/lanches.html">Lanches e Aperitivos</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="highlight-h1">Café Gelado com Leite de Amêndoas</h1>
+
+        <section id="receita">
+
+            <div id="image">
+                <div class="receitas-cat">
+                    <p>bebidas</p>
+                </div>
+
+                <abbr title="Café Gelado com Leite de Amêndoas"><img src="/images/bebidas/cafe.jpg" alt="Café Gelado com Leite de Amêndoas"></abbr>
+
+                <div class="image-desc">
+                    <div class="image-span">
+                        <span class="material-symbols-outlined">
+                            schedule
+                        </span>
+                        <p style="display: inline">5min</p>
+                    </div>
+
+                    <div class="image-span">
+                        <span class="material-symbols-outlined">
+                            stockpot
+                        </span>
+                        <p style="display: inline;">1 porção</p>
+                    </div>
+
+                    <p>Um café gelado refrescante e suave, adoçado com leite de amêndoas, perfeito para um impulso de energia fresco.</p>
+                </div>
+            </div>
+
+            <nav>
+                <h2>Confira também:</h2>
+                <ul>
+                    <a href="/receitas/bebidas/caipirinha.html">
+                        <li><p>Caipirinha</p></li>
+                    </a>
+                    <a href="/receitas/bebidas/cha-pessego.html">
+                        <li><p>Chá Gelado de Pêssego</p></li>
+                    </a>
+                    <a href="/receitas/bebidas/chocolate-quente.html">
+                        <li><p>Chocolate Quente</p></li>
+                    </a>
+                    <a href="/receitas/bebidas/coquetel-frutas.html">
+                        <li><p>Coquetel de Frutas Tropicais</p></li>
+                    </a>
+                    <a href="/receitas/bebidas/limonada.html">
+                        <li><p>Limonada Fresca</p></li>
+                    </a>
+                    <a href="/receitas/bebidas/lemongrass.html">
+                        <li><p>Lemongrass Fizz</p></li>
+                    </a>
+                    <a href="/receitas/bebidas/margarita.html">
+                        <li><p>Margarita Tropical</p></li>
+                    </a>
+                    <a href="/receitas/bebidas/mojito.html">
+                        <li><p>Mojito Clássico</p></li>
+                    </a>
+                    <a href="/receitas/bebidas/moscow.html">
+                        <li><p>Moscow Mule</p></li>
+                    </a>
+                    <a href="/receitas/bebidas/pina-colada.html">
+                        <li><p>Pina colada</p></li>
+                    </a>
+                    <a href="/receitas/bebidas/smoothie.html">
+                        <li><p>Smoothie</p></li>
+                    </a>
+                </ul>
+            </nav>
+
+            <article class="ingredientes">
+                <h2>Ingredientes</h2>
+        <!--    <div class="check">
+                </div> -->
+                <div>
+                    <input type="checkbox" name="ing-1" id="ing-1">
+                    <label for="ing-1">1 xícara de café forte (pode ser café expresso ou café coado e resfriado)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ing-2" id="ing-2">
+                    <label for="ing-2">1/2 xícara de leite de amêndoas (você pode usar leite de amêndoas pronto ou fazer o seu em casa)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ing-3" id="ing-3">
+                    <label for="ing-3">2 colheres de chá de açúcar (ou a gosto)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ing-4" id="ing-4">
+                    <label for="ing-4">Gelo a gosto</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ing-5" id="ing-5">
+                    <label for="ing-5">Chantilly (opcional, para decorar)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ing-6" id="ing-6">
+                    <label for="ing-6">Amêndoas picadas (opcional, para decorar)</label>
+                </div>
+                
+            </article>
+
+            <article class="preparo">
+                <h2>Modo de Preparo</h2>
+                <div>
+                    <input type="checkbox" name="modo-1" id="modo-1">
+                    <label for="modo-1"><strong class="bold">1. Preparar o Café:</strong><br> Prepare uma xícara de café forte, de acordo com a sua preferência. Você pode usar café expresso ou café coado e, em seguida, deixá-lo esfriar.
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="modo-2" id="modo-2">
+                    <label for="modo-2"><strong class="bold">2. Preparar o Leite de Amêndoas:</strong><br> Se você não tiver leite de amêndoas pronto, pode fazê-lo em casa. Para isso, basta misturar 1/2 xícara de amêndoas cruas com 2 xícaras de água em um liquidificador. Coe a mistura com um pano fino ou um coador de café para separar o líquido das amêndoas sólidas. O líquido coado é o seu leite de amêndoas.
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="modo-3" id="modo-3">
+                    <label for="modo-3"><strong class="bold">3. Adicionar o Açúcar:</strong><br> Adoce o café com 2 colheres de chá de açúcar (ou a gosto). Você pode usar açúcar comum, açúcar mascavo, mel ou adoçante, de acordo com suas preferências.
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="modo-4" id="modo-4">
+                    <label for="modo-4"><strong class="bold">4. Montar o Café Gelado:</strong><br> Encha um copo alto com gelo até a metade. Despeje o café adoçado sobre o gelo.
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="modo-5" id="modo-5">
+                    <label for="modo-5"><strong class="bold">5. Adicionar o Leite de Amêndoas:</strong><br> Despeje cuidadosamente o leite de amêndoas sobre o café. O leite de amêndoas ficará na parte superior devido à diferença de densidade, criando uma camada distinta.
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="modo-6" id="modo-6">
+                    <label for="modo-6"><strong class="bold">6. Decorar (Opcional):</strong><br> Se desejar, decore o café gelado com chantilly e amêndoas picadas por cima.
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="modo-7" id="modo-7">
+                    <label for="modo-7"><strong class="bold">7. Servir e Aproveitar:</strong><br> Use um canudo ou colher longa para mexer o café gelado antes de beber. Sirva imediatamente e aproveite!
+                </div>
+                
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <h1>Bom Gosto <span> &reg; </span> </h1> 
+        <p><strong>Contato: bomgosto@gmail.com</strong></p>
+    </footer>
+    <div class="footer-end">
+        <p>&copy; 2023 Bom Gosto - todos os direitos reservados</p>
+        <p>Site criado por Igor Henrique, Ryan de Almeida e Marcio Costa Santos</p>
+    </div>
+</body>
+</html>

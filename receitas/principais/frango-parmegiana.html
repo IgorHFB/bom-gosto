@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bom Gosto - Frango à Parmegiana</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="shortcut icon" href="/icons/favicon2.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/receitas.css" />
+    <link rel="stylesheet" href="/styles/media.css" />
+  </head>
+
+  <body>
+    <div id="top">
+      <!-- caixa de pesquisa -->
+      <div class="search-container">
+        <form action="" class="search" id="search-bar">
+          <input type="search" placeholder="Buscar..." class="search__input" />
+
+          <div class="search__button" id="search-button">
+            <i class="ri-search-line search__icon"></i>
+            <i class="ri-close-line search__close"></i>
+          </div>
+        </form>
+      </div>
+      <script src="/js/main.js"></script>
+      <!--Logo bom gosto-->
+      <h1 class="header-h1"><a href="/index.html">Bom Gosto</a></h1>
+      <!-- Login -->
+      <div id="logar">
+        <a href="/receitas/login.html">
+          <span class="material-symbols-outlined"> person </span>
+          <p style="display: inline-block">Entrar</p>
+        </a>
+      </div>
+    </div>
+
+    <header id="header">
+      <nav id="menu">
+        <div>
+          <a href="/index.html">
+            <span class="material-symbols-outlined"> restaurant_menu </span>
+          </a>
+        </div>
+        <a href="/receitas/principais/principais.html">Pratos Principais</a>
+        <a href="/receitas/sobremesa/sobremesa.html">Sobremesas</a>
+        <a href="/receitas/bebidas/bebidas.html">Bebidas</a>
+        <a href="/receitas/saudavel/saudavel.html">Saudável</a>
+        <a href="/receitas/lanches/lanches.html">Lanches e Aperitivos</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="highlight-h1">Frango à Parmegiana</h1>
+
+      <section id="receita">
+        <div id="image">
+          <div class="receitas-cat">
+            <p>pratos principais</p>
+          </div>
+
+          <abbr title="Frango à Parmegiana"
+            ><img
+              src="/images/pratos-principais/frango-a-parmegiana.jpg"
+              alt="Frango à Parmegiana"
+          /></abbr>
+
+          <div class="image-desc">
+            <div class="image-span">
+              <span class="material-symbols-outlined"> schedule </span>
+              <p style="display: inline">40min</p>
+            </div>
+
+            <div class="image-span">
+              <span class="material-symbols-outlined"> stockpot </span>
+              <p style="display: inline">4 porções</p>
+            </div>
+
+            <p>
+              Peitos de frango macios e suculentos, empanados e cobertos com
+              molho de tomate caseiro e uma camada generosa de queijo derretido,
+              assado até a perfeição.
+            </p>
+          </div>
+        </div>
+
+        <nav>
+          <h2>Confira também:</h2>
+          <ul>
+            <a href="/receitas/principais/salmao-grelhado.html">
+              <li><p>Salmão Grelhado com Molho de Limão</p></li>
+            </a>
+            <a href="/receitas/principais/risoto-cogumelo.html">
+              <li><p>Risoto de Cogumelos</p></li>
+            </a>
+            <a href="/receitas/principais/lasanha.html">
+              <li><p>Lasanha à Bolonhesa</p></li>
+            </a>
+            <a href="/receitas/principais/frango-assado-batatas.html">
+              <li><p>Frango Assado com Batatas</p></li>
+            </a>
+            <a href="/receitas/principais/frango-curry.html">
+              <li><p>Frango ao Curry</p></li>
+            </a>
+            <a href="/receitas/principais/espaguete.html">
+              <li><p>Espaguete ao Pesto com Tomate Seco</p></li>
+            </a>
+            <a href="/receitas/principais/bife-grelhado-molho.html">
+              <li><p>Bife Grelhado com Molho de Vinho Tinto</p></li>
+            </a>
+            <a href="/receitas/principais/tacos.html">
+              <li><p>Tacos de Carne Moída</p></li>
+            </a>
+            <a href="/receitas/principais/picanha-grelhada.html">
+              <li><p>Picanha Grelhada com Batata Recheada</p></li>
+            </a>
+            <a href="/receitas/principais/paleta-de-cordeiro.html">
+              <li><p>Paleta de Cordeiro</p></li>
+            </a>
+            <a href="/receitas/principais/file-de-peixe.html">
+              <li><p>Filé de Peixe Fresco</p></li>
+            </a>
+          </ul>
+        </nav>
+
+        <article class="ingredientes">
+          <h2>Ingredientes</h2>
+
+          <div>
+            <input type="checkbox" name="ing-1" id="ing-1" />
+            <label for="ing-1">4 peitos de frango</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-2" id="ing-2" />
+            <label for="ing-2">Sal e pimenta a gosto</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-3" id="ing-3" />
+            <label for="ing-3">1 xícara de farinha de trigo</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-4" id="ing-4" />
+            <label for="ing-4">2 ovos</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-5" id="ing-5" />
+            <label for="ing-5">2 xícaras de farinha de rosca</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-6" id="ing-6" />
+            <label for="ing-6">Óleo vegetal para fritar</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-7" id="ing-7" />
+            <label for="ing-7">1 xícara de molho de tomate</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-8" id="ing-8" />
+            <label for="ing-8">1 xícara de queijo mussarela ralado</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-9" id="ing-9" />
+            <label for="ing-9">1/2 xícara de queijo parmesão ralado </label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-10" id="ing-10" />
+            <label for="ing-10"
+              >Folhas de manjericão fresco para decorar
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" name="ing-11" id="ing-11" />
+            <label for="ing-11">Arroz ou massa cozida para servir </label>
+          </div>
+        </article>
+
+        <article class="preparo">
+          <h2>Modo de Preparo</h2>
+          <div>
+            <input type="checkbox" name="modo-1" id="modo-1" />
+            <label for="modo-1"
+              ><strong class="bold">1. Preparar os Ingredientes:</strong
+              ><br />Tempere os peitos de frango com sal e pimenta a gosto.
+              Reserve.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-2" id="modo-2" />
+            <label for="modo-2"
+              ><strong class="bold">2. Montar Estação de Empanamento:</strong
+              ><br />Em três pratos rasos separados, coloque a farinha de trigo
+              no primeiro, os ovos batidos no segundo e a farinha de rosca no
+              terceiro.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-3" id="modo-3" />
+            <label for="modo-3"
+              ><strong class="bold">3. Empanar o Frango:</strong><br />Passe
+              cada peito de frango primeiro na farinha de trigo, garantindo que
+              esteja bem coberto. Em seguida, mergulhe o frango nos ovos
+              batidos, cobrindo-o completamente. Por fim, passe-o na farinha de
+              rosca, pressionando bem para que a cobertura fique aderida.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-4" id="modo-4" />
+            <label for="modo-4"
+              ><strong class="bold">4. Fritar o Frango:</strong><br />Em uma
+              frigideira grande, aqueça óleo vegetal suficiente para cobrir os
+              peitos de frango. Frite os peitos empanados em óleo quente até que
+              fiquem dourados e cozidos por dentro, cerca de 5 minutos de cada
+              lado. Retire-os da frigideira e coloque-os sobre papel toalha para
+              escorrer o excesso de óleo.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-5" id="modo-5" />
+            <label for="modo-5"
+              ><strong class="bold">5. Montar o Parmegiana:</strong
+              ><br />Pré-aqueça o forno a 180°C. Em uma assadeira, espalhe um
+              pouco de molho de tomate no fundo. Coloque os peitos de frango
+              fritos sobre o molho. Cubra cada peito com uma generosa porção de
+              molho de tomate, queijo mussarela e queijo parmesão ralado.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-6" id="modo-6" />
+            <label for="modo-6"
+              ><strong class="bold">6. Assar o Parmegiana:</strong><br />Leve a
+              assadeira ao forno pré-aquecido e asse por cerca de 15 minutos, ou
+              até que o queijo esteja derretido e borbulhante.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" name="modo-7" id="modo-7" />
+            <label for="modo-7"
+              ><strong class="bold">7. Servir:</strong><br />Retire a assadeira
+              do forno e decore com folhas de manjericão fresco. Sirva o frango
+              ao parmegiana quente, acompanhado de arroz ou massa cozida.</label
+            >
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <h1>Bom Gosto <span> &reg; </span></h1>
+      <p><strong>Contato: bomgosto@gmail.com</strong></p>
+    </footer>
+    <div class="footer-end">
+      <p>&copy; 2023 Bom Gosto - todos os direitos reservados</p>
+      <p>
+        Site criado por Igor Henrique, Ryan de Almeida e Marcio Costa Santos
+      </p>
+    </div>
+  </body>
+</html>

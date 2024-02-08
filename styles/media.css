@@ -1,0 +1,64 @@
+/* correção logo  */
+
+@media screen and (max-width: 1300px) {
+    .header-h1 {
+        transform: translateX(-40px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header-h1 {
+        transform: translateX(-0px);
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .header-h1 {
+        transform: translateX(-10px);
+    }
+}
+
+/* ------------ */
+
+@media screen and (max-width: 1050px) {
+    section#receita {
+        grid-template-areas:
+        "image image image"
+        "ingredientes ingredientes ingredientes"
+        "preparo preparo preparo"
+        "nav nav nav";
+    }
+
+    section#receita .ingredientes {
+        max-width: 500px;
+    }
+
+    section#receita .preparo {
+        max-width: 650px;
+    }
+
+    section#receita nav {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    section#highlight {
+        grid-template-columns: 1fr;
+    }
+
+    .box-receitas {
+        width: 375px;
+    }
+
+    .receitas-img img{
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 1160px) and (max-width: 1526px) {
+    section.categorias {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
