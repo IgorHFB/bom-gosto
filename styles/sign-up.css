@@ -18,7 +18,7 @@
     background-size: cover;
     width: 100%;
     min-height: 92.1vh;
-    background-image: url(/images/kitchen-2.jpg);
+    background-image: url(../images/kitchen-2.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
