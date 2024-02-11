@@ -51,8 +51,12 @@
         width: 375px;
     }
 
-    .receitas-img img{
+    .receitas-img img {
         width: 375px;
+    }
+
+    .search-container {
+        display: none;
     }
 }
 
